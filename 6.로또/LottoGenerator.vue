@@ -14,7 +14,7 @@
 import LottoBall from './LottoBall';
 
 function getWinNumbers(){
-    console.log('getWinNumbers');
+    console.log('getWinNumbers'); 
     const candidate = Array(45).fill().map((v,i) => i + 1);
     const shuffle = [];
     while(candidate.length > 0){
@@ -68,8 +68,8 @@ export default {
        })
     },
     watch :{
-        bonus(val,oldVal){ // data bonus 값이 바뀔때마다 호출시킬수있으나 왠만하면 안쓰는게 좋음 ..(최후의 수단.)
-            console.log(oldVal);
+        bonus(value,oldVal){ // data bonus 값이 바뀔때마다 호출시킬수있으나 왠만하면 안쓰는게 좋음 ..(최후의 수단.)
+            console.log(value,oldVal); //현재값, 이전값 
             if(val===null){
                 this.showBalls();
             }
