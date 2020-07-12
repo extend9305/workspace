@@ -1,0 +1,9 @@
+diff a/6.로또/LottoGenerator.vue b/6.로또/LottoGenerator.vue	(rejected hunks)
+@@ -68,7 +68,6 @@
+        })
+     },
+     watch :{
+-            console.log(oldVal);
+         bonus(value,oldVal){ // data bonus 값이 바뀔때마다 호출시킬수있으나 왠만하면 안쓰는게 좋음 ..(최후의 수단.)
+             console.log(value,oldVal); //현재값, 이전값 
+             if(val===null){
